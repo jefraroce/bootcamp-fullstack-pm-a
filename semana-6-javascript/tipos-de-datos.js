@@ -10,7 +10,7 @@ var a0 = true || false // Boolean
 // 
 // DOCS: https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Number
 
-
+// Maneras de Instanciar un Number
 var e = 5
 var f = 5.3
 var g = -6
@@ -28,24 +28,29 @@ var h = new Number(4)
 //
 // DOCS: https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String
 
+// Maneras de Instanciar un String
 var i = "Texto"
 var j = 'Texto'
 var k = `Texto`
 var l = new String('Texto')
 
-var m = `Texto ${i}`
-
 // Operaciones directas
 
+// Concatenación de Strings
 'Texto' + ' Otro Texto'
 'Texto' + 3
+
+// Interpolación de Strings
+var m = `Texto ${i}`
 
 // Valores Booleanos
 //
 // DOCS: https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Boolean
 
+// Maneras de Instanciar un Boolean
 var booleanoVerdadero = true
 var booleanoFalso = false
+var booleano = new Boolean(false)
 
 // Operaciones directas (validaciones)
 
