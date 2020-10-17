@@ -128,7 +128,7 @@ const crearCurso = function (nombre, duraccion) {
 
 // Taller
 
-// Crear un arreglo con 4 cursos
+// Crear un arreglo con 4 cursos utilizando nuestra función **crearCurso**
 
 // var curso1 = crearCurso('angular', 1)
 
