@@ -70,6 +70,12 @@ const listaDeFrutas = document.querySelector('#lista-de-frutas')
 // const frutasParaLaLista = frutas.map(function (fruta) {
 //   return `<li>${fruta}</li>`
 // })
+/*
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+*/
+
 listaDeFrutas.innerHTML = ''
 frutas.forEach(function (fruta) {
   listaDeFrutas.innerHTML += `<li>${fruta}</li>`
@@ -85,3 +91,12 @@ Taller
 2. Luego recorrer el arreglo e imprimir un mensaje cada vez que se encuentre un número par. Ejemplo: 'Encontrado el 2 par'
 3. Crear una lista HTML '<ul></ul>' dinamicamente desde JavaScript que imprima cada los valores impares del arreglo dentro de un <li></li>. Ejemplo: '<li>3</li>'
 */
+
+var fruta = 'COCO'
+
+"<li>" + fruta + "</li>"
+'<li>' + fruta + '</li>'
+
+'<li>'.concat(fruta).concat('</li>')
+
+`<li>${fruta}</li>`
