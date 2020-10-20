@@ -22,29 +22,43 @@ function ordenarDeLaZaLaA() {
 
 ordenarDeLaZaLaA()
 
-//-------------------------------------
+//--------------------------------------------------------
+
+// Aclaraciones
+
+// 1. Los corchetes cuadrados [] son escencialmente usados para crear o intereactuar con arrays.
 
 //       0  1  2
 var a = [1, 2, 3]
 a[2];
 
-// Agrupar
+// 2. Los parentesis () son usados en diversas situaciones como por ejemplo:
 
-(2 + 6) * 7
+// Agrupar operaciones
 
-// Configurar parametros
+(2 + 6) * 7;
 
-// Función sin parametros
+// Agrupar comparaciones
+
+(true && false) || false
+
+// Siempre van luego de las palabras clave "if, switch, for, while, entre otras"
+
+//--------------------------------------------------------
+
+// Repaso sobre la configuración de parametros en funciones
+
+// 1. Función sin parametros
 // const sumar = function() {
 //   return 3 + 4
 // }
 
-// Función parametros definidos
+// 2. Función parametros definidos
 // const sumar = function(valor1, valor2) {
 //   return valor1 + valor2
 // }
 
-// Función parametros opcionales
+// 3. Función parametros opcionales
 const sumar = function(valor1, valor2 = 1) {
   return valor1 + valor2
 }
