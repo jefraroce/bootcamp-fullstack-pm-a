@@ -9,42 +9,42 @@
 
 // const META = 10000000 // Moto
 // const ahorroFijoMensual = 800000
-// let ahorroTotal = 0
+// let montoAhorrado = 0
 // const numeroEstimadoDeMeses = Math.ceil(META / ahorroFijoMensual)
 
 // for (let i = 0; i < numeroEstimadoDeMeses; i++) {
-//   ahorroTotal += ahorroFijoMensual
+//   montoAhorrado += ahorroFijoMensual
 // }
 
-// console.log(`En un total de ${numeroEstimadoDeMeses} meses yo tendré ahorrado ${ahorroTotal}`)
+// console.log(`En un total de ${numeroEstimadoDeMeses} meses yo tendré ahorrado ${montoAhorrado}`)
 
 // Mejora con while
 
 const META = 10000000 // Moto
 const ahorroMinimoMensual = 50000
 const ahorroMaximoMensual = 800000
-let ahorroTotal = 0
+let montoAhorrado = 0
 let numeroEstimadoDeMeses = 0
 
 //            0     < 10000000
-while ( ahorroTotal < META ) {
-  let ahorro = Math.floor(Math.random() * ahorroMaximoMensual) // Varia cada mes
+while ( montoAhorrado < META ) {
+  let ahorroDelMes = Math.floor(Math.random() * ahorroMaximoMensual) // Varia cada mes
 
   //  50000
-  if (ahorro < ahorroMinimoMensual) {
-    ahorro = ahorroMinimoMensual
+  if (ahorroDelMes < ahorroMinimoMensual) {
+    ahorroDelMes = ahorroMinimoMensual
   }
 
   // numeroEstimadoDeMeses = numeroEstimadoDeMeses + 1
   // numeroEstimadoDeMeses += 1
   numeroEstimadoDeMeses++
 
-  console.log(`En el mes # ${numeroEstimadoDeMeses} voy a consignar ${ahorro}`)
+  console.log(`En el mes # ${numeroEstimadoDeMeses} voy a consignar ${ahorroDelMes}`)
 
-  ahorroTotal += ahorro
+  montoAhorrado += ahorroDelMes
 }
 
-console.log(`En un total de ${numeroEstimadoDeMeses} meses yo tendré ahorrado ${ahorroTotal}`)
+console.log(`En un total de ${numeroEstimadoDeMeses} meses yo tendré ahorrado ${montoAhorrado}`)
 
 // for(let i = 0; i < 10; i++) {
 //   console.log('i ', i)
