@@ -5,6 +5,7 @@
     // Sentencias
   }
 
+  DOC: https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/while
 */
 
 // const META = 10000000 // Moto
@@ -46,6 +47,10 @@ while ( montoAhorrado < META ) {
 
 console.log(`En un total de ${numeroEstimadoDeMeses} meses yo tendré ahorrado ${montoAhorrado}`)
 
+//--------------------------------
+
+// Utilizando while para ejecutar imitir el funcionamiento del ciclo for
+
 // for(let i = 0; i < 10; i++) {
 //   console.log('i ', i)
 // }
@@ -56,6 +61,8 @@ console.log(`En un total de ${numeroEstimadoDeMeses} meses yo tendré ahorrado $
 //   i++
 // }
 
+//--------------------------------
+
 /*
 Taller
 
@@ -64,6 +71,6 @@ Utilizando el ciclo while, crear una función que reciba como parametro mi peso 
 Condiciones
 - Cada día de ejercicio equivale a bajar entre 0.5 y 2 kg
 
-Resultado
+Resultado Esperado
 - Un mensaje que me diga la cantidad de días que me tomó llegar al peso ideal y el peso obtenido al final
 */
