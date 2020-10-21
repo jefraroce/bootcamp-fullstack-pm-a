@@ -49,9 +49,9 @@ console.log(`En un total de ${numeroEstimadoDeMeses} meses yo tendré ahorrado $
 
 //--------------------------------
 
-// Utilizando while para ejecutar imitir el funcionamiento del ciclo for
+// Utilizando while para ejecutar imitar el funcionamiento del ciclo for
 
-// for(let i = 0; i < 10; i++) {
+// for (let i = 0; i < 10; i++) {
 //   console.log('i ', i)
 // }
 
