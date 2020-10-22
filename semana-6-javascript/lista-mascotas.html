@@ -11,39 +11,52 @@
     <title>Listado de Mascotas</title>
   </head>
   <body>
-    <h1>Registro de Mascota</h1>
+    <div class="container">
+      <h1>Registro de Mascota</h1>
 
-    <form class="mx-2 mx-md-5 mb-2" id="formulario">
-      <div class="form-group row">
-        <label class="col-12 col-md-2" for="nombre">Nombre</label>
-        <div class="col-12 col-md-10">
-          <input type="text" id="nombre" maxlength="30" class="form-control" required />
+      <form class="mx-2 mx-md-5 mb-2" id="formulario">
+        <div class="form-group row">
+          <label class="col-12 col-md-2" for="nombre">Nombre</label>
+          <div class="col-12 col-md-10">
+            <input type="text" id="nombre" maxlength="30" class="form-control" required />
+          </div>
         </div>
-      </div>
-      <div class="form-group row">
-        <label class="col-12 col-md-2" for="especie">Especie</label>
-        <div class="col-12 col-md-10">
-          <select class="custom-select" id="especie" autocomplete="off" required>
-            <option value="" selected></option>
-            <option value="perro">Perro 🐕</option>
-            <option value="gato">Gato 😼</option>
-            <option value="serpiente">Serpiente 🐍</option>
-          </select>
+        <div class="form-group row">
+          <label class="col-12 col-md-2" for="especie">Especie</label>
+          <div class="col-12 col-md-10">
+            <select class="custom-select" id="especie" autocomplete="off" required>
+              <option value="" selected></option>
+              <option value="perro">Perro 🐕</option>
+              <option value="gato">Gato 😼</option>
+              <option value="serpiente">Serpiente 🐍</option>
+            </select>
+          </div>
         </div>
-      </div>
-      <div class="form-group row">
-        <label class="col-12 col-md-2" for="edad">Edad</label>
-        <div class="col-12 col-md-10">
-          <input type="number" min="0" max="100" id="edad" class="form-control" required />
+        <div class="form-group row">
+          <label class="col-12 col-md-2" for="edad">Edad</label>
+          <div class="col-12 col-md-10">
+            <input type="number" min="0" max="100" id="edad" class="form-control" required />
+          </div>
         </div>
-      </div>
 
-      <button type="submit" class="btn btn-primary">Registrar</button>
-    </form>
+        <button type="submit" class="btn btn-primary">Registrar</button>
+      </form>
 
-    <h1>Listado de Mascotas</h1>
+      <h1>Listado de Mascotas</h1>
 
-    <ul id="lista-de-mascotas"></ul>
+      <table id="lista-de-mascotas" class="table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Especie</th>
+            <th>Edad</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

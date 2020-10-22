@@ -2,10 +2,10 @@ console.log('Lista de Mascotas.js')
 
 // Inicializamos nuestras variables
 
+const formulario = document.querySelector('#formulario')
+const listaDeMascotas = document.querySelector('#lista-de-mascotas > tbody')
 const iconosEspecies = { perro: '🐶', gato: '😼', serpiente: '🐍' }
 let mascotas = []
-const formulario = document.querySelector('#formulario')
-const listaDeMascotas = document.querySelector('#lista-de-mascotas')
 
 // Cargo los campos dentro del formulario
 const campoNombre = formulario.querySelector('#nombre')
@@ -18,6 +18,11 @@ const registrarMascota = function (nombre, especie, edad) {
   mascotas.push({ nombre: nombre, especie: especie, edad: edad })
 }
 
+const removerMascota = function (indiceDelaMascota) {
+  mascotas.splice(indiceDelaMascota, 1)
+  listarMascotas()
+}
+
 const listarMascotas = function () {
   listaDeMascotas.innerHTML = ''
 
@@ -25,7 +30,12 @@ const listarMascotas = function () {
     // Guardamos la mascota actual en una variable
     const ms = mascotas[i]
 
-    listaDeMascotas.innerHTML = listaDeMascotas.innerHTML + `<li>${ms.nombre} - ${iconosEspecies[ms.especie]} - ${ms.edad}</li>`
+    listaDeMascotas.innerHTML = listaDeMascotas.innerHTML + `<tr>
+      <td>${ms.nombre}</td>
+      <td>${iconosEspecies[ms.especie]}</td>
+      <td>${ms.edad}</td>
+      <td><button class="btn btn-danger" onclick="removerMascota(${i})">Remover</button></td>
+    </tr>`
   }
 }
 
