@@ -1,0 +1,47 @@
+html, body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.contenedor {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.fondo-con-imagen {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fondo-con-filtro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 192, 0);
+  background: radial-gradient(circle, rgba(255,192,0,0.6) 0%, rgba(199, 150, 2, 0.6) 40%, rgba(4,4,3, 0.8) 80%, rgba(0,0,0,1) 100%); 
+  /* opacity: 0.8; */
+}
+
+
+.barra-lateral {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.barra-lateral .rotar-270 {
+  display: block;
+  transform: rotate(90deg);
+  margin-top: 50px;
+}

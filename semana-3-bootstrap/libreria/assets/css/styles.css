@@ -1,0 +1,136 @@
+:root {
+  --primary: #673AB7;
+  --warning: #FFFF00;
+}
+
+html, body {
+  width: 100%;
+  min-height: calc(100vh - 56px);
+  color: #424242;
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.container-custom {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar #software-brand {
+  color: #D4A2A2;
+  font-size: 80px;
+}
+
+.sidebar .sidebar-link span.material-icons {
+  font-size: 80px;
+}
+
+.sidebar .sidebar-link span.sidebar-text {
+  font-size: 25px;
+}
+
+.cart {
+  height: calc(100vh - 390px);
+  overflow-y: auto;
+}
+
+.item {
+  display: grid;
+  grid-template-areas: 'image name name name'
+  'image description description description'
+  'actions actions quantity price';
+  grid-template-columns: 85px 85px auto auto;
+}
+
+.item-image {
+  grid-area: image;
+  width: 80px;
+  height: 80px;
+}
+
+.item-name {
+  grid-area: name;
+}
+
+.item-description {
+  grid-area: description;
+}
+
+.item-actions {
+  grid-area: actions;
+  display: flex;
+  justify-content: space-around;
+}
+
+.item-quantity {
+  grid-area: quantity;
+  text-align: right;
+  align-self: center;
+}
+
+.item-price {
+  grid-area: price;
+  text-align: right;
+}
+
+@media all and (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    z-index: 99;
+    background-color: white;
+    justify-content: space-around;
+  }
+
+  .sidebar .sidebar-link span.material-icons {
+    font-size: 40px;
+  }
+}
+
+/* Overriding Bootstrap Styles */
+.btn {
+  font-weight: bold;
+}
+
+.text-primary {
+  color: #673AB7 !important;
+}
+
+.bg-primary {
+  background-color: #673AB7 !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #673AB7;
+  border-color: #673AB7;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: #563299 !important;
+}
+
+.text-warning {
+  color: var(--warning) !important;
+}
+
+.bg-warning {
+  background-color: var(--warning) !important;
+}
+
+.btn-warning {
+  color: #424242;
+  background-color: var(--warning);
+  border-color: var(--warning);
+}
+
+.btn-warning:hover, .btn-warning:active, .btn-warning:focus {
+  background-color: #d8d800 !important;
+}
